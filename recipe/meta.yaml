@@ -1,4 +1,4 @@
-{% set version = '0.9.5' %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidysdm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidysdm/tidysdm_{{ version }}.tar.gz
-  sha256: 88d04c8946b57bd982a70a278d065797537aab5971da34be8eca5691a8cafd6e
+  sha256: 8b4d63e6fbb7543cc54cb88a29e8176121cff2e6d89bfe3136d7df8edeb2b4bd
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -84,12 +84,8 @@ about:
   home: https://github.com/EvolEcolGroup/tidysdm
   dev_url: https://evolecolgroup.github.io/tidysdm/
   license: AGPL-3.0-or-later
-  summary: Fit species distribution models (SDMs) using the 'tidymodels' framework, which provides
-    a standardised interface to define models and process their outputs. 'tidysdm' expands
-    'tidymodels' by providing methods for spatial objects, models and metrics specific
-    to SDMs, as well as a number of specialised functions to process occurrences for
-    contemporary and palaeo datasets. The full functionalities of the package are described
-    in Leonardi et al. (2023) <doi:10.1101/2023.07.24.550358>.
+  summary: Fit species distribution models (SDMs) using the 'tidymodels' framework, which provides a standardised interface to define models and process their outputs. 'tidysdm' expands 'tidymodels' by providing methods for spatial objects, models and metrics specific to SDMs, as well as a number of specialised functions
+    to process occurrences for contemporary and palaeo datasets. The full functionalities of the package are described in Leonardi et al. (2023) <doi:10.1101/2023.07.24.550358>.
   license_family: AGPL
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3'
