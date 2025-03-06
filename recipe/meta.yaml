@@ -29,7 +29,6 @@ requirements:
   host:
     - r-base
     - r-dalex
-    - r-dalextra
     - r-dials
     - r-dplyr
     - r-ggplot2
@@ -43,6 +42,7 @@ requirements:
     - r-rsample
     - r-sf
     - r-spatialsample
+    - r-stars
     - r-terra
     - r-tibble
     - r-tidymodels
@@ -53,7 +53,6 @@ requirements:
   run:
     - r-base
     - r-dalex
-    - r-dalextra
     - r-dials
     - r-dplyr
     - r-ggplot2
@@ -67,6 +66,7 @@ requirements:
     - r-rsample
     - r-sf
     - r-spatialsample
+    - r-stars
     - r-terra
     - r-tibble
     - r-tidymodels
