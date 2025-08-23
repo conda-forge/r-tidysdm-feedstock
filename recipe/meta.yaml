@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidysdm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidysdm/tidysdm_{{ version }}.tar.gz
-  sha256: 8b4d63e6fbb7543cc54cb88a29e8176121cff2e6d89bfe3136d7df8edeb2b4bd
+  sha256: 137a1a6e5040c0a60b5d63d5f212ff337359d4e3e78ce71fd9bfb24c484a87b8
 
 build:
   number: 0
